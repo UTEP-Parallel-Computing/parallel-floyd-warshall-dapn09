@@ -47,7 +47,9 @@ if __name__ == "__main__":
                 sol = int(refGraph[i][j])
                 tst = int(testGraph[i][j])
                 if sol != tst:
-                    print(f"Discrepancies found in row:{i}, col:{j}")
-    elseo
+                    print(f"Discrepancies found in row:{i}, col:{j}!!!")
+                else:
+                    print("Both matrices match!!!")
+    else:
         for k in range(startRow, endRow):
             comm.send(testGraph[k], dest=0, tag=42)
