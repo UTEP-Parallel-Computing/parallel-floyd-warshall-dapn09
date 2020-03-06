@@ -22,7 +22,7 @@ This assignment took me about a day, from start to finish.
 * 4 Threads: 0.27s
 
 ### Behavior Analysis
-As the number of threads is doubled, the execution time gets cut by about half.
+As the number of threads is doubled, the execution time gets cut by about half. This can be explained becuase the work is being broken up evenly among the threads.
 
 ### dumpCPUInfo.sh output
 ```
