@@ -4,27 +4,27 @@ The Floyd-Warshall algorithm is an algorithm to find the shortest paths on a gra
 This script is able to read two matrices, a solved and an unsolved matrix (```fwTestResults.txt```
 and ```fwTest.txt``` respectively), then it applies the algorithm on the unsolved matrix and compares the results with the solved matrix.
 
-###Problems Encountered
+### Problems Encountered
 
 While doing this assignment, I experienced several deadlock-causing scenarios. Debugging these was relatively straightforward using the ```comm.Get_rank()``` function from MPI. The work breakdown was significantly easier thanks to the equations.
 
-###Existing Bugs
+### Existing Bugs
 
 This script does not contain bugs I am aware of.
 
-###How long to complete this assignment?
+### How long to complete this assignment?
 
 This assignment took me about a day, from start to finish.
 
-###Performance measurements
+### Performance measurements
 *Single Thread:
 *2 Threads:
 *4 Threads:
 *8 Threads:
 
-###Behavior Analysis
+### Behavior Analysis
 
-###dumpCPUInfo.sh output
+### dumpCPUInfo.sh output
 
 
 
