@@ -17,15 +17,15 @@ This script does not contain bugs I am aware of.
 This assignment took me about a day, from start to finish.
 
 ### Performance measurements
-*Single Thread:
-*2 Threads:
-*4 Threads:
-*8 Threads:
+* Single Thread: 0.79s
+* 2 Threads: 0.46s
+* 4 Threads: 0.27s
 
 ### Behavior Analysis
+As the number of threads is doubled, the execution time gets cut by about half.
 
 ### dumpCPUInfo.sh output
-
-
-
-
+```
+model name      : Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+      4      36     216
+```

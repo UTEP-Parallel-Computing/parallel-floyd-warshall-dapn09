@@ -4,6 +4,7 @@
 
 from mpi4py import MPI
 import matrixUtils as mu
+import time
 
 def readMatrixFromFile(filePath):
     file = open(filePath, 'r')
@@ -21,6 +22,8 @@ if __name__ == "__main__":
     testGraph = readMatrixFromFile("fwTest.txt")
     #Read the file with the correct answers.
     refGraph = readMatrixFromFile("fwTestResult.txt")
+
+    startTime = time.time()
 
     if comm.Get_rank() == 0:
 
@@ -77,6 +80,7 @@ if __name__ == "__main__":
             print(f"Discrepancies found!!!")
         else:
             print("Both matrices match!!!")
+            print(f"Execution time {time.time() - startTime} seconds")
     else:
         for k in range(startRow, endRow):
             comm.send(testGraph[k], dest=0, tag=42)
